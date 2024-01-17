@@ -7,7 +7,7 @@
     color: map-get($map: $primary-colors, $key: "Dark Blue");
     font-weight: map-get($map: $font-weights, $key: "regular");
 
-    & > li {
+    #{&}__option {
         padding: 0.35rem;
     }
 }

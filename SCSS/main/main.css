@@ -55,6 +55,12 @@ a {
   color: unset;
 }
 
+button {
+  background-color: inherit;
+  border: none;
+  display: block;
+}
+
 * {
   font-family: 'Public Sans', sans-serif;
 }
@@ -70,6 +76,6 @@ body {
   color: hsl(233, 26%, 24%);
   font-weight: 400;
 }
-.navigation-menu > li {
+.navigation-menu .navigation-menu__option {
   padding: 0.35rem;
 }/*# sourceMappingURL=main.css.map */
