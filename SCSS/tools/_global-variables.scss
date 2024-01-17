@@ -1,0 +1,21 @@
+@use "./functions" as *;
+// Colors
+$primary-colors: (
+    hsl(233, 26%, 24%),
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%),
+);
+
+
+$neutral-colors: (
+    hsl(233, 8%, 62%),
+    hsl(220, 16%, 96%),
+    hsl(0, 0%, 98%),
+    hsl(0, 0%, 100%),
+);
+
+// base font-size value
+$base-font-size: convert-to-rem(18px);
+
+$default-font-family: "'Public Sans', sans-serif";
+$font-weights: ("light": 300, "regular": 400, "bold": 700);

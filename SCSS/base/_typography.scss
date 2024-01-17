@@ -1,0 +1,9 @@
+@use "../tools";
+
+* {
+    font-family: unquote(tools.$default-font-family);
+}
+
+body {
+    font-size: tools.$base-font-size;
+}

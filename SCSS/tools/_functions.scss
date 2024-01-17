@@ -1,0 +1,8 @@
+// Convert px to rem
+@function convert-to-rem($pixelValue) {
+    @if type-of($pixelValue) != number {
+        @error 'This is not a valid number';
+    }
+
+    @return ($pixelValue / 16px) + 0rem;
+}
