@@ -1,3 +1,9 @@
+@use "../tools" as *;
+
 .invite-btn {
-    
+background-image: $generated-linear-gradient;
+border-radius: 10px;
+color: map-get($map: $neutral-colors, $key: "White");
+font-weight: map-get($map: $font-weights, $key: bold);
+padding: 0.55rem 1.45rem;
 }

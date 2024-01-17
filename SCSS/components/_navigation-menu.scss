@@ -6,6 +6,7 @@
     margin-inline: auto;
     color: map-get($map: $primary-colors, $key: "Dark Blue");
     font-weight: map-get($map: $font-weights, $key: "regular");
+    border-radius: 8px;
 
     #{&}__option {
         padding: 0.35rem;
