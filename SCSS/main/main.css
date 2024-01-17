@@ -61,4 +61,15 @@ a {
 
 body {
   font-size: 1.125rem;
+}
+
+.navigation-menu {
+  width: 85%;
+  text-align: center;
+  margin-inline: auto;
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+}
+.navigation-menu > li {
+  padding: 0.35rem;
 }/*# sourceMappingURL=main.css.map */
