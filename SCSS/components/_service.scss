@@ -6,12 +6,10 @@
     }
 
     #{&}__title {
-        color: map-get($map: $neutral-colors, $key: "Dark Blue");
-        font-weight: map-get($map: $font-weights, $key: "regular");
+        @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "regular"));
     }
 
     #{&}__description {
-        color: map-get($map: $neutral-colors, $key: "Grayish Blue");
-        font-weight: map-get($map: $font-weights, $key: "light");
+        @include font-and-color(map-get($map: $neutral-colors, $key: "Grayish Blue"), map-get($map: $font-weights, $key: "light"));
     }
 }

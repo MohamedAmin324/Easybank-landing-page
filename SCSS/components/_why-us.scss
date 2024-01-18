@@ -2,13 +2,12 @@
 
 .why-us {
     margin-bottom: 3.5rem;
-    
+
     #{&}__title {
-        color: map-get($map: $primary-colors, $key: "Dark Blue");
-        font-weight: map-get($map: $font-weights, $key: "bold");
+        @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "bold"));
     }
 
     #{&}__text {
-        color: map-get($map: $neutral-colors, $key: "Grayish Blue");
+        @include font-and-color(map-get($map: $neutral-colors, $key: "Grayish Blue"), map-get($map: $font-weights, $key: "light"));
     }
 }

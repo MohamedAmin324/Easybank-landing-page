@@ -1,11 +1,10 @@
 @use "../tools" as *;
 
 .navigation-menu {
+    @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "regular"));
     width: 85%;
     text-align: center;
     margin-inline: auto;
-    color: map-get($map: $primary-colors, $key: "Dark Blue");
-    font-weight: map-get($map: $font-weights, $key: "regular");
     border-radius: 8px;
 
     #{&}__option {
