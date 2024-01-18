@@ -90,12 +90,24 @@ body {
   padding: 0.55rem 1.45rem;
 }
 
+.why-us {
+  margin-bottom: 3.5rem;
+}
+.why-us .why-us__title {
+  color: hsl(233, 26%, 24%);
+  font-weight: 700;
+}
+.why-us .why-us__text {
+  color: hsl(233, 8%, 62%);
+}
+
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
 }
 
 header {
+  background-color: hsl(0, 0%, 100%);
   padding: 0.95rem;
   text-align: center;
 }
@@ -107,5 +119,11 @@ header .header__text {
   color: hsl(233, 8%, 62%);
   font-weight: 300;
   margin-block-end: 1rem;
+  text-wrap: balance;
+}
+
+.about-us {
+  padding: 3.75rem 1.45rem;
+  text-align: center;
   text-wrap: balance;
 }/*# sourceMappingURL=main.css.map */
