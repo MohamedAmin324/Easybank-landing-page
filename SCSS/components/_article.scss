@@ -1,29 +1,37 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .article {
-    background-color: map-get($map: $neutral-colors, $key: "White");
-    width: 90%;
-    margin-inline: auto;
+	background-color: map-get($map: $neutral-colors, $key: 'White');
+	width: 90%;
+	margin-inline: auto;
 
-    & > :not(figure) {
-        padding: 0 1rem;
-    }
+	& > :not(figure) {
+		padding: 0 1rem;
+	}
 
+	#{&}__author-name {
+		margin: 1.75rem 0 1rem 0;
+		font-size: 0.95rem;
+		@include font-and-color(
+			map-get($neutral-colors, 'Grayish Blue'),
+			map-get($font-weights, 'light')
+		);
+	}
 
-    #{&}__author-name {
-        margin:  1.75rem 0 1rem 0;
-        font-size: 0.95rem;
-        @include font-and-color(map-get($neutral-colors, "Grayish Blue"), map-get($font-weights, "light"));
-    }
+	#{&}__title {
+		margin-block-start: 0;
+		@include font-and-color(
+			map-get($primary-colors, 'Dark Blue'),
+			map-get($font-weights, 'bold')
+		);
+	}
 
-    #{&}__title {
-        margin-block-start: 0;
-        @include font-and-color(map-get($primary-colors, "Dark Blue"), map-get($font-weights, "bold"));
-    }
-
-    #{&}__content {
-        font-size: 1rem;
-        @include font-and-color(map-get($neutral-colors, "Grayish Blue"), map-get($font-weights, "light"));
-        padding-bottom: 1.5rem;
-    }
+	#{&}__content {
+		font-size: 1rem;
+		@include font-and-color(
+			map-get($neutral-colors, 'Grayish Blue'),
+			map-get($font-weights, 'light')
+		);
+		padding-bottom: 1.5rem;
+	}
 }

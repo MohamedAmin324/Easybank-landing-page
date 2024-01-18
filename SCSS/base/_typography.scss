@@ -1,16 +1,16 @@
-@use "../tools";
+@use '../tools';
 
 * {
-    font-family: unquote(tools.$default-font-family);
+	font-family: unquote(tools.$default-font-family);
 }
 
 body {
-    font-size: tools.$base-font-size;
+	font-size: tools.$base-font-size;
 }
 
 // this is a utility class to hide elements
 // I know it is for layout purposes but I just could not find where to put it
 
 .hidden {
-    display: none;
+	display: none;
 }

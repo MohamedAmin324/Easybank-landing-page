@@ -6,8 +6,17 @@
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
   margin-block-end: 0;
 }
 
@@ -28,14 +37,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -47,8 +63,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -97,9 +115,9 @@ body {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-image: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(144, 66%, 51%) 29%, hsl(152, 66%, 51%) 42%, hsl(160, 67%, 51%) 53%, hsl(168, 68%, 51%) 63%, hsl(176, 69%, 51%) 74%, hsl(184, 69%, 51%) 86%, hsl(192, 70%, 51%) 100%);
-  border-radius: 10px;
+  border-radius: 25px;
   margin-inline: auto;
-  padding: 0.55rem 1.45rem;
+  padding: 0.65rem 1.45rem;
 }
 
 .why-us {
@@ -176,6 +194,12 @@ figure img {
 .attribution a {
   color: hsl(228, 45%, 44%);
   display: inline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .mockups-wrapper {

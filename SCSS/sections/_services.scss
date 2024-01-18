@@ -1,7 +1,7 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .services {
-    & > :not(:last-child) {
-        margin-bottom: 2rem;
-    }
+	& > :not(:last-child) {
+		margin-bottom: 2rem;
+	}
 }

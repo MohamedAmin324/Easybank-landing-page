@@ -1,13 +1,19 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .why-us {
-    margin-bottom: 3.5rem;
+	margin-bottom: 3.5rem;
 
-    #{&}__title {
-        @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "bold"));
-    }
+	#{&}__title {
+		@include font-and-color(
+			map-get($map: $primary-colors, $key: 'Dark Blue'),
+			map-get($map: $font-weights, $key: 'bold')
+		);
+	}
 
-    #{&}__text {
-        @include font-and-color(map-get($map: $neutral-colors, $key: "Grayish Blue"), map-get($map: $font-weights, $key: "light"));
-    }
+	#{&}__text {
+		@include font-and-color(
+			map-get($map: $neutral-colors, $key: 'Grayish Blue'),
+			map-get($map: $font-weights, $key: 'light')
+		);
+	}
 }

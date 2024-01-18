@@ -1,6 +1,6 @@
-@use "./global-variables";
+@use './global-variables';
 
 @mixin font-and-color($color-value, $font-weight-value) {
-    color: $color-value;
-    font-weight: $font-weight-value;
+	color: $color-value;
+	font-weight: $font-weight-value;
 }

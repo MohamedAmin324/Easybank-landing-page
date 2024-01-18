@@ -1,15 +1,21 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .service {
-    #{&}__img {
-        margin-inline: auto;
-    }
+	#{&}__img {
+		margin-inline: auto;
+	}
 
-    #{&}__title {
-        @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "regular"));
-    }
+	#{&}__title {
+		@include font-and-color(
+			map-get($map: $primary-colors, $key: 'Dark Blue'),
+			map-get($map: $font-weights, $key: 'regular')
+		);
+	}
 
-    #{&}__description {
-        @include font-and-color(map-get($map: $neutral-colors, $key: "Grayish Blue"), map-get($map: $font-weights, $key: "light"));
-    }
+	#{&}__description {
+		@include font-and-color(
+			map-get($map: $neutral-colors, $key: 'Grayish Blue'),
+			map-get($map: $font-weights, $key: 'light')
+		);
+	}
 }

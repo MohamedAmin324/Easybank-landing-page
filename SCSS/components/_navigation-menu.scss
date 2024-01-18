@@ -1,17 +1,20 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .navigation-menu {
-    @include font-and-color(map-get($map: $primary-colors, $key: "Dark Blue"), map-get($map: $font-weights, $key: "regular"));
-    width: 85%;
-    text-align: center;
-    margin-inline: auto;
-    border-radius: 8px;
+	@include font-and-color(
+		map-get($map: $primary-colors, $key: 'Dark Blue'),
+		map-get($map: $font-weights, $key: 'regular')
+	);
+	width: 85%;
+	text-align: center;
+	margin-inline: auto;
+	border-radius: 8px;
 
-    #{&}__option {
-        padding: 0.35rem;
-    }
+	#{&}__option {
+		padding: 0.35rem;
+	}
 }
 
 .navigation-menu--white-text {
-    color: map-get($map: $neutral-colors, $key: "White");
+	color: map-get($map: $neutral-colors, $key: 'White');
 }
