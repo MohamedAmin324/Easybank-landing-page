@@ -101,6 +101,17 @@ body {
   color: hsl(233, 8%, 62%);
 }
 
+.service .service__img {
+  margin-inline: auto;
+}
+.service .service__title {
+  font-weight: 400;
+}
+.service .service__description {
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+}
+
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
@@ -125,5 +136,8 @@ header .header__text {
 .about-us {
   padding: 3.75rem 1.45rem;
   text-align: center;
-  text-wrap: balance;
+}
+
+.services > :not(:last-child) {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */

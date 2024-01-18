@@ -1,0 +1,17 @@
+@use "../tools" as *;
+
+.service {
+    #{&}__img {
+        margin-inline: auto;
+    }
+
+    #{&}__title {
+        color: map-get($map: $neutral-colors, $key: "Dark Blue");
+        font-weight: map-get($map: $font-weights, $key: "regular");
+    }
+
+    #{&}__description {
+        color: map-get($map: $neutral-colors, $key: "Grayish Blue");
+        font-weight: map-get($map: $font-weights, $key: "light");
+    }
+}
