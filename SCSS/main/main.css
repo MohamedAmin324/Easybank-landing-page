@@ -73,6 +73,10 @@ body {
   font-size: 1.125rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .navigation-menu {
   color: hsl(233, 26%, 24%);
   font-weight: 400;
@@ -225,7 +229,7 @@ header .header__text {
 
 footer {
   background-color: hsl(233, 26%, 24%);
-  padding: 2rem;
+  padding: 3rem 2rem;
   color: hsl(0, 0%, 100%);
   text-align: center;
 }
@@ -239,4 +243,7 @@ footer svg path {
 }
 footer .footer__copy-right {
   margin: 1.7rem 0;
+}
+footer > .navigation-menu {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
