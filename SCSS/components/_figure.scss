@@ -1,0 +1,12 @@
+@use "../tools" as *;
+
+figure {
+    display: block;
+    width: 100%;
+    margin-block-start: 0;
+    margin-inline: 0;
+
+    img {
+        width: 100%;
+    }
+}

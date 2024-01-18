@@ -11,6 +11,10 @@ figure, blockquote, dl, dd, ul {
   margin-block-end: 0;
 }
 
+body {
+  margin: 0;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul {
   list-style: none;
@@ -114,14 +118,52 @@ body {
   font-weight: 300;
 }
 
+.article {
+  background-color: hsl(0, 0%, 100%);
+  width: 90%;
+  margin-inline: auto;
+}
+.article > :not(figure) {
+  padding: 0 1rem;
+}
+.article .article__author-name {
+  margin: 1.75rem 0 1rem 0;
+  font-size: 0.95rem;
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+}
+.article .article__title {
+  margin-block-start: 0;
+  color: hsl(233, 26%, 24%);
+  font-weight: 700;
+}
+.article .article__content {
+  font-size: 1rem;
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+figure {
+  display: block;
+  width: 100%;
+  margin-block-start: 0;
+  margin-inline: 0;
+}
+figure img {
+  width: 100%;
+}
+
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
   background-color: hsl(0, 0%, 100%);
   padding: 0.95rem;
+  padding-bottom: 4.5rem;
   text-align: center;
 }
 header .header__title {
@@ -138,8 +180,25 @@ header .header__text {
 .about-us {
   padding: 3.75rem 1.45rem;
   text-align: center;
+  background-color: hsl(220, 16%, 96%);
 }
 
 .services > :not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.articles {
+  background-color: hsl(0, 0%, 98%);
+  padding: 6rem 1.45rem;
+}
+.articles .articles__main-title {
+  text-align: center;
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+  padding: 0.75rem;
+  margin-block-start: 0;
+  margin-bottom: 1.25rem;
+}
+.articles > :not(:last-child) {
+  margin-bottom: 1.85rem;
 }/*# sourceMappingURL=main.css.map */
