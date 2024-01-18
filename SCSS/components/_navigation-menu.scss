@@ -11,3 +11,7 @@
         padding: 0.35rem;
     }
 }
+
+.navigation-menu--white-text {
+    color: map-get($map: $neutral-colors, $key: "White");
+}

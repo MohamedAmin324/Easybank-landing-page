@@ -1,0 +1,11 @@
+@use "../tools" as *;
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: map-get($map: $neutral-colors, $key: "blue-green");
+    display: inline;
+}

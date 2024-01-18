@@ -85,6 +85,10 @@ body {
   padding: 0.35rem;
 }
 
+.navigation-menu--white-text {
+  color: hsl(0, 0%, 100%);
+}
+
 .request-invite-btn {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
@@ -154,6 +158,22 @@ figure img {
   width: 100%;
 }
 
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: inline;
+}
+
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
@@ -201,4 +221,22 @@ header .header__text {
 }
 .articles > :not(:last-child) {
   margin-bottom: 1.85rem;
+}
+
+footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 2rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+footer svg {
+  margin-inline: auto;
+  display: block;
+  margin-bottom: 1.65rem;
+}
+footer svg path {
+  fill: white;
+}
+footer .footer__copy-right {
+  margin: 1.7rem 0;
 }/*# sourceMappingURL=main.css.map */
