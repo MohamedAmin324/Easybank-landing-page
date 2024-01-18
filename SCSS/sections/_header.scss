@@ -1,0 +1,19 @@
+@use "../tools" as *;
+
+
+header {
+    padding: 0.95rem;
+    text-align: center;
+
+    .#{&}__title {
+        color: map-get($map: $primary-colors, $key: "Dark Blue");
+        font-weight: map-get($map: $font-weights, $key: "regular");
+    }
+
+    .#{&}__text {
+        color: map-get($map: $neutral-colors, $key: "Grayish Blue");
+        font-weight: map-get($map: $font-weights, $key: "light");
+        margin-block-end: 1rem;
+        text-wrap: balance;
+    }
+}

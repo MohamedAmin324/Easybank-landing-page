@@ -93,4 +93,19 @@ body {
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
+}
+
+header {
+  padding: 0.95rem;
+  text-align: center;
+}
+header .header__title {
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+}
+header .header__text {
+  color: hsl(233, 8%, 62%);
+  font-weight: 300;
+  margin-block-end: 1rem;
+  text-wrap: balance;
 }/*# sourceMappingURL=main.css.map */
