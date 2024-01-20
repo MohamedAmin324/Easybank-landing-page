@@ -94,7 +94,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .navigation-menu {
@@ -127,6 +127,11 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 
+.request-invite-btn:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
 .request-invite-btn {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
@@ -135,7 +140,6 @@ body {
   margin-inline: auto;
   padding: 0.65rem 1.45rem;
 }
-
 .why-us {
   margin-bottom: 3.5rem;
 }

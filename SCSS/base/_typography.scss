@@ -14,5 +14,5 @@ body {
 // I know it is for layout purposes but I just could not find where to put it
 
 .hidden {
-	display: none;
+	display: none !important;
 }
