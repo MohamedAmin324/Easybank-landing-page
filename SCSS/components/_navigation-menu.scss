@@ -13,6 +13,17 @@
 	#{&}__option {
 		padding: 0.35rem;
 	}
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+		margin-block-start: 0;
+
+		li {
+			align-self: center;
+		}
+	}
 }
 
 .navigation-menu--white-text {

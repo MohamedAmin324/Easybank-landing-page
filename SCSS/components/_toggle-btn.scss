@@ -3,3 +3,9 @@
 .close-menu-btn:hover, .open-menu-btn:hover {
     @extend %btn-hover;
 }
+
+.open-menu-btn {
+    @include set-responsive-layout(map-get($breakpoints, "medium")) {
+        display: none;
+    }
+}

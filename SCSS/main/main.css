@@ -113,6 +113,17 @@ body {
 .navigation-menu .navigation-menu__option {
   padding: 0.35rem;
 }
+@media (width > 768px) {
+  .navigation-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-block-start: 0;
+  }
+  .navigation-menu li {
+    align-self: center;
+  }
+}
 
 .navigation-menu--white-text {
   color: hsl(0, 0%, 100%);
@@ -140,6 +151,12 @@ body {
   margin-inline: auto;
   padding: 0.65rem 1.45rem;
 }
+@media (width > 768px) {
+  .request-invite-btn {
+    width: 20%;
+  }
+}
+
 .why-us {
   margin-bottom: 3.5rem;
 }
@@ -226,6 +243,12 @@ figure img {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
+@media (width > 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -235,6 +258,12 @@ nav {
   top: 0;
   z-index: 2;
   background-color: hsl(0, 0%, 100%);
+}
+@media (width > 768px) {
+  nav * {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .mockups-wrapper {
