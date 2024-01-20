@@ -1,3 +1,8 @@
+.close-menu-btn:hover, .open-menu-btn:hover, .request-invite-btn:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -125,11 +130,6 @@ body {
 
 .navigation-menu--white-bg {
   background-color: hsl(0, 0%, 100%);
-}
-
-.request-invite-btn:hover {
-  cursor: pointer;
-  scale: 1.1;
 }
 
 .request-invite-btn {
