@@ -4,3 +4,8 @@
 	color: $color-value;
 	font-weight: $font-weight-value;
 }
+
+@mixin set-position($position-value, $top-value) {
+	position: unquote($position-value);
+	top: $top-value;
+}

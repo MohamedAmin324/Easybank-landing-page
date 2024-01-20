@@ -8,7 +8,7 @@
 	width: 85%;
 	text-align: center;
 	margin-inline: auto;
-	border-radius: 8px;
+	border-radius: 4.5px;
 
 	#{&}__option {
 		padding: 0.35rem;
@@ -17,4 +17,17 @@
 
 .navigation-menu--white-text {
 	color: map-get($map: $neutral-colors, $key: 'White');
+}
+
+.navigation-menu--modified-layout {
+	@include set-position("absolute", 60px);
+	left: 8%;
+	padding: 1.5rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.navigation-menu--white-bg {
+	background-color: map-get($map: $neutral-colors, $key: "White");
 }

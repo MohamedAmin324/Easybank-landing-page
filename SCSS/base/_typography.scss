@@ -6,6 +6,8 @@
 
 body {
 	font-size: tools.$base-font-size;
+	position: relative;
+	z-index: 0;
 }
 
 // this is a utility class to hide elements

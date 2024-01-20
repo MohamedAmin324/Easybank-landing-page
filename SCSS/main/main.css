@@ -89,6 +89,8 @@ button {
 
 body {
   font-size: 1.125rem;
+  position: relative;
+  z-index: 0;
 }
 
 .hidden {
@@ -101,7 +103,7 @@ body {
   width: 85%;
   text-align: center;
   margin-inline: auto;
-  border-radius: 8px;
+  border-radius: 4.5px;
 }
 .navigation-menu .navigation-menu__option {
   padding: 0.35rem;
@@ -109,6 +111,20 @@ body {
 
 .navigation-menu--white-text {
   color: hsl(0, 0%, 100%);
+}
+
+.navigation-menu--modified-layout {
+  position: absolute;
+  top: 60px;
+  left: 8%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navigation-menu--white-bg {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .request-invite-btn {
@@ -196,10 +212,25 @@ figure img {
   display: inline;
 }
 
+.modal {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .mockups-wrapper {

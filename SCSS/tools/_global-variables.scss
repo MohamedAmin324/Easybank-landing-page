@@ -13,11 +13,11 @@ $neutral-colors: (
 	'Very Light Gray': hsl(0, 0%, 98%),
 	'White': hsl(0, 0%, 100%),
 	'blue-green': hsl(228, 45%, 44%),
+	"semi-transparent black": hsla(0, 0%, 0%, 0.5),
 );
 
-// base font-size value
+// Typography basic values
 $base-font-size: convert-to-rem(18px);
-
 $default-font-family: "'Public Sans', sans-serif";
 $font-weights: (
 	'light': 300,
