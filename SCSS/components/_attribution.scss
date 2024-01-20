@@ -1,7 +1,7 @@
 @use '../tools' as *;
 
 .attribution {
-	font-size: 11px;
+	font-size: convert-to-rem(12.5px);
 	text-align: center;
 }
 

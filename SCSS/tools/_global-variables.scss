@@ -38,3 +38,11 @@ $generated-linear-gradient: linear-gradient(
 	hsl(184deg 69% 51%) 86%,
 	hsl(192deg 70% 51%) 100%
 );
+
+// Breakpoints for responsiveness
+
+$breakpoints: (
+	"small": 375px,
+	"medium": 768px,
+	"large": 1024px
+);

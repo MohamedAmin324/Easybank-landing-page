@@ -9,3 +9,9 @@
 	position: unquote($position-value);
 	top: $top-value;
 }
+
+@mixin set-responsive-layout($breakpoint-value) {
+	@media (width > $breakpoint-value) {
+		@content;
+	}
+}

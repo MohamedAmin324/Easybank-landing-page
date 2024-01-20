@@ -8,3 +8,7 @@ export const selectAll = (...selectors)=>{
         return [currentSelector, targetElement];
     }));
 };
+
+export const toggleVisibility = (...elements)=>{
+    elements.forEach(element => element.classList.toggle("hidden"));
+}
