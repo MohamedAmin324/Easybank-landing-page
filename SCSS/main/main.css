@@ -380,6 +380,20 @@ header .header__text {
 .articles > :not(:last-child) {
   margin-bottom: 1.85rem;
 }
+@media (width > 768px) {
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline: 7.1875rem;
+  }
+  .articles .articles__main-title {
+    grid-column: 1/6;
+    text-align: left;
+  }
+  .articles > :not(.articles__main-title) {
+    margin-bottom: 0;
+  }
+}
 
 footer {
   background-color: hsl(233, 26%, 24%);
