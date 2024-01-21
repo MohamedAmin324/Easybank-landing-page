@@ -445,4 +445,9 @@ footer > .navigation-menu {
     margin: 0;
     margin-bottom: 0.25rem;
   }
+  footer .request-invite-btn {
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+  }
 }/*# sourceMappingURL=main.css.map */
