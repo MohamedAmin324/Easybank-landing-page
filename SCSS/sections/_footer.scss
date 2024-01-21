@@ -23,4 +23,40 @@ footer {
 	& > .navigation-menu {
 		margin-bottom: 1.5rem;
 	}
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		.navigation-menu {
+			grid-column:  2 / 4;
+			grid-row: 1 / 3 ;
+
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			justify-self: start;
+			margin-inline: 0;
+			margin-bottom: 0;
+			gap: 17px;
+		}
+
+		.social-media-icons {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			align-self: self-end;
+		}
+
+		.attribution {
+			grid-column: 1 / 5;
+			margin-top: convert-to-rem(20px);
+		}
+
+		.footer__copy-right {
+			grid-column: 4 / 5;
+			align-self: self-end;
+			margin: 0 {
+				bottom: 0.25rem;
+			};
+		}
+	}
 }
