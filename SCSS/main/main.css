@@ -152,12 +152,6 @@ body {
   margin-inline: auto;
   padding: 0.65rem 1.45rem;
 }
-@media (width > 768px) {
-  .request-invite-btn {
-    width: 20%;
-  }
-}
-
 .why-us {
   margin-bottom: 3.5rem;
 }
@@ -274,10 +268,29 @@ nav {
   }
 }
 
+@media (width > 768px) {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-wrapper header {
+    align-self: center;
+    order: 1;
+  }
+  .header-wrapper .mockups-wrapper {
+    order: 2;
+  }
+}
+
 .mockups-wrapper {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (width > 768px) {
+  .mockups-wrapper {
+    background-image: url("../../images/bg-intro-desktop.svg");
+  }
 }
 
 header {
@@ -295,6 +308,20 @@ header .header__text {
   font-weight: 300;
   margin-block-end: 1rem;
   text-wrap: balance;
+}
+@media (width > 768px) {
+  header {
+    text-align: unset;
+    width: 35%;
+    margin-left: 2.8125rem;
+  }
+  header .request-invite-btn {
+    margin-inline: 0;
+  }
+  header .header__title {
+    font-size: 2.5rem;
+    font-size: 700;
+  }
 }
 
 .about-us {

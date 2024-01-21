@@ -13,8 +13,4 @@
 	&:hover {
         @extend %btn-hover;
     }
-
-	@include set-responsive-layout(map-get($breakpoints, "medium")) {
-		width: 20%;
-	}
 }
