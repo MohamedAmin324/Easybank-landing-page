@@ -116,9 +116,10 @@ body {
 @media (width > 768px) {
   .navigation-menu {
     display: flex;
-    justify-content: center;
     gap: 25px;
     margin-block-start: 0;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .navigation-menu li {
     align-self: center;
@@ -260,9 +261,16 @@ nav {
   background-color: hsl(0, 0%, 100%);
 }
 @media (width > 768px) {
-  nav * {
-    width: -moz-fit-content;
-    width: fit-content;
+  nav {
+    justify-content: space-around;
+  }
+  nav .bank-logo {
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+  }
+  nav .navigation-menu, nav .request-invite-btn {
+    margin-inline: 0;
   }
 }
 

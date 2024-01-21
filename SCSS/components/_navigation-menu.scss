@@ -16,9 +16,9 @@
 
 	@include set-responsive-layout(map-get($breakpoints, "medium")) {
 		display: flex;
-		justify-content: center;
 		gap: 25px;
 		margin-block-start: 0;
+		width: fit-content;
 
 		li {
 			align-self: center;

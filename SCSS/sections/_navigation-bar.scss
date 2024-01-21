@@ -12,8 +12,15 @@ nav {
 
 
 	@include set-responsive-layout(map-get($breakpoints, "medium")) {
-		* {
-			width: fit-content;
+		.bank-logo {
+			height: fit-content;
+			align-self: center;
 		}
+
+		.navigation-menu, .request-invite-btn {
+			margin-inline: 0;
+		}
+
+		justify-content: space-around;
 	}
 }
