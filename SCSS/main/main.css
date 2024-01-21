@@ -163,6 +163,11 @@ body {
   color: hsl(233, 8%, 62%);
   font-weight: 300;
 }
+@media (width > 768px) {
+  .why-us {
+    width: 40%;
+  }
+}
 
 .service .service__img {
   margin-inline: auto;
@@ -174,6 +179,11 @@ body {
 .service .service__description {
   color: hsl(233, 8%, 62%);
   font-weight: 300;
+}
+@media (width > 768px) {
+  .service .service__img {
+    margin-inline: 0;
+  }
 }
 
 .article {
@@ -335,9 +345,24 @@ header .header__text {
   text-align: center;
   background-color: hsl(220, 16%, 96%);
 }
+@media (width > 768px) {
+  .about-us {
+    text-align: left;
+    padding-inline: 7.1875rem;
+  }
+}
 
 .services > :not(:last-child) {
   margin-bottom: 2rem;
+}
+@media (width > 768px) {
+  .services {
+    display: flex;
+    gap: 1.5625rem;
+  }
+  .services > :not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .articles {

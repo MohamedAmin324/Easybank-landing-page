@@ -4,4 +4,13 @@
 	& > :not(:last-child) {
 		margin-bottom: 2rem;
 	}
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")){
+        display: flex;
+		gap: convert-to-rem(25px);
+
+		& > :not(:last-child) {
+			margin-bottom: 0;
+		}
+	}
 }

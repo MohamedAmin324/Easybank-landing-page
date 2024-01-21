@@ -4,4 +4,9 @@
 	padding: 3.75rem 1.45rem;
 	text-align: center;
 	background-color: map-get($map: $neutral-colors, $key: 'Light Grayish Blue');
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+		text-align: left;
+		padding-inline: convert-to-rem(115px);
+	}
 }

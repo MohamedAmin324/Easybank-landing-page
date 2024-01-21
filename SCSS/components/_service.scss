@@ -18,4 +18,10 @@
 			map-get($map: $font-weights, $key: 'light')
 		);
 	}
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+		#{&}__img {
+			margin-inline: 0;
+		}
+	}
 }

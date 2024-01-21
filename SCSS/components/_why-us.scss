@@ -16,4 +16,8 @@
 			map-get($map: $font-weights, $key: 'light')
 		);
 	}
+
+	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+		width: 40%;
+	}
 }
