@@ -1,11 +1,18 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .mockups-wrapper {
 	background-image: url('../../images/bg-intro-mobile.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 
-	@include set-responsive-layout(map-get($breakpoints, "medium")) {
-		background-image: url("../../images/bg-intro-desktop.svg");
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
+		background-image: none;
+
+		.mockups-image {
+			position: absolute;
+			right: 0;
+			top: -70px;
+		}
 	}
 }

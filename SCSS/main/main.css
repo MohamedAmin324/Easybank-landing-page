@@ -286,10 +286,16 @@ nav {
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media (width > 768px) {
   .mockups-wrapper {
-    background-image: url("../../images/bg-intro-desktop.svg");
+    background-image: none;
+  }
+  .mockups-wrapper .mockups-image {
+    position: absolute;
+    right: 0;
+    top: -70px;
   }
 }
 

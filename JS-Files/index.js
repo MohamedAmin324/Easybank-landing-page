@@ -2,26 +2,19 @@
 
 import { selectAll, toggleVisibility, changeLayout } from "./utility-functions.js";
 
-const toggleButtons = selectAll(".close-menu-btn", ".open-menu-btn");
-const navigationMenu = document.querySelector("nav .navigation-menu");
-const modal = document.querySelector(".modal");
-const requestButton = document.querySelector("nav .request-invite-btn");
+const [closeBtn, openBtn, navigationMenu, modal, requestButton, bgDesktop] = selectAll(".close-menu-btn", ".open-menu-btn", "nav .navigation-menu", ".modal", "nav .request-invite-btn", ".bg-desktop");
 
-for (const buttonSelector in toggleButtons) {
-    const button = toggleButtons[buttonSelector];
-
-    button.addEventListener("click", () => {
-        toggleVisibility(toggleButtons[".close-menu-btn"], toggleButtons[".open-menu-btn"], modal, navigationMenu);
-        modal.classList.contains("hidden") ? document.body.style.overflow = "scroll" : document.body.style.overflow = "hidden";
+const toggleButtons = [closeBtn, openBtn];
+toggleButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        toggleVisibility(closeBtn, openBtn, modal, navigationMenu);
     })
-}
+})
 
 window.onload = () => {
-    changeLayout(navigationMenu, "hidden", "navigation-menu--modified-layout", "navigation-menu--white-bg");
-    changeLayout(requestButton, "hidden");
+    changeLayout([navigationMenu, "hidden", "navigation-menu--modified-layout", "navigation-menu--white-bg"], [requestButton, "hidden"], [bgDesktop, "hidden"]);
 }
 
-window.addEventListener("resize", ()=>{
-    changeLayout(navigationMenu, "hidden", "navigation-menu--modified-layout", "navigation-menu--white-bg");
-    changeLayout(requestButton, "hidden");
+window.addEventListener("resize", () => {
+    changeLayout([navigationMenu, "hidden", "navigation-menu--modified-layout", "navigation-menu--white-bg"], [requestButton, "hidden"], [bgDesktop, "hidden"]);
 })
