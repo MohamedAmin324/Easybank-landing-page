@@ -430,6 +430,7 @@ footer > .navigation-menu {
     margin-inline: 0;
     margin-bottom: 0;
     gap: 17px;
+    text-align: left;
   }
   footer .social-media-icons {
     grid-column: 1/2;
