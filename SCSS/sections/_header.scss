@@ -25,16 +25,18 @@ header {
 
 	@include set-responsive-layout(map-get($breakpoints, "medium")) {
 		text-align: unset;
-		width: 35%;
-		margin-left: convert-to-rem(45px);
+		width: 45%;
+		margin-left: convert-to-rem(65px);
 
 		.request-invite-btn {
 			margin-inline: 0;
 		}
 
 		.header__title {
-			font-size: 2.5rem;
-			font-size: 700;
+			font:{
+                size: 2.75rem;
+				weight: map-get($map: $font-weights, $key: "bold");
+			};
 		}
 	}
 }

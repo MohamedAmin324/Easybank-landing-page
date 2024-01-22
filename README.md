@@ -15,8 +15,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -31,10 +29,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Easybank landing page Solution](https://github.com/MohamedAmin324/Easybank-landing-page)
+- Live Site URL: [Easybank landing page Live Preview](https://mohamedamin324.github.io/Easybank-landing-page/)
 
 ## My process
+First, I analyzed both the desktop and mobile design to identify the general structure of the HTML code, which elements to use and which sections will make up the final UI. Some elements are specific for one of the two designs and therefore are hidden by default or will be hidden when a certain breakpoint is reached.
+Using BEM naming convention for naming classes on sections and components. SCSS partials helped breakdown making styling every component easier than stacking them up in a huge CSS file.
+Lastly, I used JS to toggle the navigation menu and prevent window scrolling on mobile view and to toggle the desktop background image and navbar elements on desktop view.
 
 ### Built with
 
@@ -43,24 +44,11 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+I learned more about the SCSS folder structure. Also this was my first time using ES6 modules to break down my JavaScript code into more manageable files.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@constantcode9909](https://www.frontendmentor.io/profile/constantcode9909)

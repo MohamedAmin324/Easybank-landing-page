@@ -267,6 +267,7 @@ nav {
 @media (width > 768px) {
   nav {
     justify-content: space-around;
+    padding: 0.5rem;
   }
   nav .bank-logo {
     height: -moz-fit-content;
@@ -304,8 +305,8 @@ nav {
   }
   .mockups-wrapper .mockups-image {
     position: absolute;
-    right: 0;
-    top: -70px;
+    right: 10px;
+    top: -130px;
   }
 }
 
@@ -328,15 +329,15 @@ header .header__text {
 @media (width > 768px) {
   header {
     text-align: unset;
-    width: 35%;
-    margin-left: 2.8125rem;
+    width: 45%;
+    margin-left: 4.0625rem;
   }
   header .request-invite-btn {
     margin-inline: 0;
   }
   header .header__title {
-    font-size: 2.5rem;
-    font-size: 700;
+    font-size: 2.75rem;
+    font-weight: 700;
   }
 }
 
