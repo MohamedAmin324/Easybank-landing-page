@@ -5,7 +5,7 @@
 		map-get($map: $primary-colors, $key: 'Dark Blue'),
 		map-get($map: $font-weights, $key: 'light')
 	);
-	font-size: .92rem;
+	font-size: 0.92rem;
 	width: 85%;
 	text-align: center;
 	margin-inline: auto;
@@ -21,8 +21,14 @@
 		margin-block-start: 0;
 		width: fit-content;
 
-		li {
-			align-self: center;
+		.navigation-menu__option--active {
+			height: 100%;
+			display: grid;
+			place-content: center;
+
+			&:hover {
+				border-bottom: 3px solid map-get($map: $primary-colors, $key: 'Lime Green');
+			}
 		}
 	}
 }

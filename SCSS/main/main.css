@@ -1,6 +1,6 @@
 .close-menu-btn:hover, .open-menu-btn:hover, .request-invite-btn:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 /* Box sizing rules */
@@ -122,8 +122,13 @@ body {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .navigation-menu li {
-    align-self: center;
+  .navigation-menu .navigation-menu__option--active {
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+  .navigation-menu .navigation-menu__option--active:hover {
+    border-bottom: 3px solid hsl(136, 65%, 51%);
   }
 }
 
@@ -148,11 +153,25 @@ body {
 .request-invite-btn {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  font-size: 0.95rem;
   background-image: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(144, 66%, 51%) 29%, hsl(152, 66%, 51%) 42%, hsl(160, 67%, 51%) 53%, hsl(168, 68%, 51%) 63%, hsl(176, 69%, 51%) 74%, hsl(184, 69%, 51%) 86%, hsl(192, 70%, 51%) 100%);
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   margin-inline: auto;
   padding: 0.65rem 1.45rem;
+  position: relative;
 }
+.request-invite-btn:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(220, 16%, 96%);
+  border-radius: 1.5625rem;
+  opacity: 0.3;
+}
+
 .why-us {
   margin-bottom: 3.5rem;
 }

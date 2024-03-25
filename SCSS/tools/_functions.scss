@@ -4,5 +4,5 @@
 		@error 'This is not a valid number';
 	}
 
-	@return ($pixelValue / 16px) + 0rem;
+	@return calc($pixelValue / 16px) + 0rem;
 }
