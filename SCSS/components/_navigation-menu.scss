@@ -3,8 +3,9 @@
 .navigation-menu {
 	@include font-and-color(
 		map-get($map: $primary-colors, $key: 'Dark Blue'),
-		map-get($map: $font-weights, $key: 'regular')
+		map-get($map: $font-weights, $key: 'light')
 	);
+	font-size: .92rem;
 	width: 85%;
 	text-align: center;
 	margin-inline: auto;
@@ -14,7 +15,7 @@
 		padding: 0.35rem;
 	}
 
-	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		display: flex;
 		gap: 25px;
 		margin-block-start: 0;
@@ -31,7 +32,7 @@
 }
 
 .navigation-menu--modified-layout {
-	@include set-position("absolute", 60px);
+	@include set-position('absolute', 60px);
 	left: 8%;
 	padding: 1.5rem 0;
 	display: flex;
@@ -40,5 +41,5 @@
 }
 
 .navigation-menu--white-bg {
-	background-color: map-get($map: $neutral-colors, $key: "White");
+	background-color: map-get($map: $neutral-colors, $key: 'White');
 }

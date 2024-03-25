@@ -19,8 +19,7 @@
 		margin-bottom: 1.85rem;
 	}
 
-
-	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		padding-inline: convert-to-rem(115px);

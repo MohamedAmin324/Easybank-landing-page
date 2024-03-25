@@ -1,17 +1,19 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .header-wrapper {
-    @include set-responsive-layout(map-get($breakpoints, "medium")) {
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		display: flex;
-        justify-content: space-between;
+		justify-content: space-between;
+		gap: convert-to-rem(70px);
+		margin-left:convert-to-rem(70px);
 
-        header {
-            align-self: center;
-            order: 1;
-        }
+		header {
+			align-self: center;
+			order: 1;
+		}
 
-        .mockups-wrapper {
-            order: 2;
-        }
+		.mockups-wrapper {
+			order: 2;
+		}
 	}
 }
