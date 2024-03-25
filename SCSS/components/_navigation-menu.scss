@@ -22,12 +22,22 @@
 		width: fit-content;
 
 		.navigation-menu__option--active {
+			a {
+				color: map-get($map: $neutral-colors, $key: 'Grayish Blue');
+				transition: color 700ms ease-in-out;
+			}
+
 			height: 100%;
 			display: grid;
 			place-content: center;
 
 			&:hover {
-				border-bottom: 3px solid map-get($map: $primary-colors, $key: 'Lime Green');
+				border-bottom: 3px solid
+					map-get($map: $primary-colors, $key: 'Lime Green');
+
+				a {
+					color: map-get($map: $primary-colors, $key: 'Dark Blue');
+				}
 			}
 		}
 	}

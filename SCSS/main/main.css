@@ -127,8 +127,15 @@ body {
     display: grid;
     place-content: center;
   }
+  .navigation-menu .navigation-menu__option--active a {
+    color: hsl(233, 8%, 62%);
+    transition: color 700ms ease-in-out;
+  }
   .navigation-menu .navigation-menu__option--active:hover {
     border-bottom: 3px solid hsl(136, 65%, 51%);
+  }
+  .navigation-menu .navigation-menu__option--active:hover a {
+    color: hsl(233, 26%, 24%);
   }
 }
 
