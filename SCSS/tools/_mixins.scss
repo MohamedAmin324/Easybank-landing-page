@@ -11,7 +11,7 @@
 }
 
 @mixin set-responsive-layout($breakpoint-value) {
-	@media (width > $breakpoint-value) {
+	@media (width >= $breakpoint-value) {
 		@content;
 	}
 }
