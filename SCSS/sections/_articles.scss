@@ -15,10 +15,6 @@
 		margin-bottom: 1.25rem;
 	}
 
-	// #{&}__container > :not(:last-child) {
-	// 	margin-bottom: 1.85rem;
-	// }
-
 	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		padding-inline: convert-to-rem(115px);
 
@@ -43,7 +39,5 @@
 			grid-template-columns: repeat(4, 1fr);
 			gap: 0;
 		}
-
-		
 	}
 }

@@ -5,12 +5,16 @@
 		margin-bottom: 2rem;
 	}
 
-	@include set-responsive-layout(map-get($breakpoints, "medium")){
-        display: flex;
-		gap: convert-to-rem(25px);
-
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		& > :not(:last-child) {
 			margin-bottom: 0;
 		}
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: convert-to-rem(15px);
+	}
+
+	@include set-responsive-layout(map-get($breakpoints, 'large')) {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }

@@ -424,11 +424,17 @@ header .header__text {
 }
 @media (width >= 768px) {
   .services {
-    display: flex;
-    gap: 1.5625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9375rem;
   }
   .services > :not(:last-child) {
     margin-bottom: 0;
+  }
+}
+@media (width >= 1024px) {
+  .services {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
