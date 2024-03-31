@@ -11,6 +11,6 @@
 .stop-scrolling {
 	overflow: hidden;
 	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 }
