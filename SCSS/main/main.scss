@@ -1,8 +1,9 @@
 @charset 'utf-8';
 
-@use "../tools";
+@use '../tools' as *;
 @use '../base';
 
+@use '../components';
+@use '../sections';
 
-@use "../components";
-@use "../sections";
+@use './util';

@@ -1,12 +1,14 @@
-@use "../tools" as *;
+@use '../tools' as *;
 
 .modal {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background: map-get($map: $neutral-colors, $key: "semi-transparent black");
-    ;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: map-get($map: $neutral-colors, $key: 'semi-transparent black');
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
+		display: none;
+	}
 }

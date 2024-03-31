@@ -98,10 +98,6 @@ body {
   z-index: 0;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .navigation-menu {
   color: hsl(233, 26%, 24%);
   font-weight: 300;
@@ -117,7 +113,7 @@ body {
 @media (width >= 768px) {
   .navigation-menu {
     display: flex;
-    gap: 25px;
+    gap: 1.5625rem;
     margin-block-start: 0;
     width: -moz-fit-content;
     width: fit-content;
@@ -143,18 +139,19 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-.navigation-menu--modified-layout {
-  position: absolute;
-  top: 60px;
-  left: 8%;
-  padding: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.navigation-menu--white-bg {
-  background-color: hsl(0, 0%, 100%);
+@media (width < 768px) {
+  .navigation-menu--modified-layout {
+    transform: translateX(-200%);
+    transition: transform 450ms ease-in-out;
+    position: absolute;
+    top: 60px;
+    left: 8%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+  }
 }
 
 .request-invite-btn {
@@ -166,6 +163,11 @@ body {
   margin-inline: auto;
   padding: 0.65rem 1.45rem;
   position: relative;
+}
+@media (width < 768px) {
+  .request-invite-btn {
+    display: none;
+  }
 }
 .request-invite-btn:hover::after {
   content: "";
@@ -274,9 +276,14 @@ figure img {
   z-index: 1;
   background: hsla(0, 0%, 0%, 0.5);
 }
+@media (width >= 768px) {
+  .modal {
+    display: none;
+  }
+}
 
 @media (width >= 768px) {
-  .open-menu-btn {
+  .open-menu-btn, .close-menu-btn {
     display: none;
   }
 }
@@ -336,6 +343,11 @@ nav {
     position: absolute;
     right: -60px;
     top: -60px;
+  }
+}
+@media (width < 768px) {
+  .mockups-wrapper .bg-desktop {
+    display: none;
   }
 }
 @media (width >= 1024px) {
@@ -500,5 +512,22 @@ footer > .navigation-menu {
     height: -moz-fit-content;
     height: fit-content;
     align-self: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.translate-in {
+  transform: translateX(0);
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+@media (width >= 768px) {
+  .stop-scrolling {
+    overflow: scroll;
   }
 }/*# sourceMappingURL=main.css.map */

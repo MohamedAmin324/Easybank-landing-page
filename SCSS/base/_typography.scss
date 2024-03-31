@@ -9,10 +9,3 @@ body {
 	position: relative;
 	z-index: 0;
 }
-
-// this is a utility class to hide elements
-// I know it is for layout purposes but I just could not find where to put it
-
-.hidden {
-	display: none !important;
-}

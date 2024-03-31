@@ -12,6 +12,10 @@
 	padding: 0.65rem 1.45rem;
 	position: relative;
 
+	@include set-mobile-responsive-layout(map-get($breakpoints, 'medium')) {
+		display: none;
+	}
+
 	&:hover {
 		@extend %btn-hover;
 	}

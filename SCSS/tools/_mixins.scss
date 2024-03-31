@@ -15,3 +15,9 @@
 		@content;
 	}
 }
+
+@mixin set-mobile-responsive-layout($breakpoint-value) {
+	@media (width < $breakpoint-value) {
+		@content;
+	}
+}

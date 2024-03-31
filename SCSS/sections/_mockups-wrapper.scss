@@ -16,6 +16,12 @@
 		}
 	}
 
+	.bg-desktop {
+		@include set-mobile-responsive-layout(map-get($breakpoints, 'medium')) {
+			display: none;
+		}
+	}
+
 	@include set-responsive-layout(map-get($breakpoints, 'large')) {
 		background-image: none;
 

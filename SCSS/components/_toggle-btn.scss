@@ -4,7 +4,7 @@
     @extend %btn-hover;
 }
 
-.open-menu-btn {
+.open-menu-btn, .close-menu-btn {
     @include set-responsive-layout(map-get($breakpoints, "medium")) {
         display: none;
     }

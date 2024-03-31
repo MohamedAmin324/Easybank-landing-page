@@ -1,0 +1,16 @@
+@use '../tools' as *;
+
+.hidden {
+	display: none;
+}
+
+.translate-in {
+	transform: translateX(0);
+}
+
+.stop-scrolling {
+	overflow: hidden;
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
+		overflow: scroll;
+	}
+}
