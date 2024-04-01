@@ -2,3 +2,8 @@
 	cursor: pointer;
 	scale: 1.05;
 }
+
+%initial-animation-state {
+	opacity: 0;
+	transition: opacity 0.8s ease-out;
+}

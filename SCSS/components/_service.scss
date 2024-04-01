@@ -1,8 +1,7 @@
 @use '../tools' as *;
 
 .service {
-	// transform: translate(-200%);
-	// transition: transform 0.5s ease-out;
+	@extend %initial-animation-state;
 
 	#{&}__img {
 		margin-inline: auto;
@@ -25,6 +24,22 @@
 	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		#{&}__img {
 			margin-inline: 0;
+		}
+
+		&:first-child {
+			transform-style: 0.25s;
+		}
+
+		&:nth-child(2) {
+			transition-delay: 0.5s;
+		}
+
+		&:nth-child(3) {
+			transition-delay: 0.75s;
+		}
+
+		&:nth-child(4) {
+			transition-delay: 1s;
 		}
 	}
 }

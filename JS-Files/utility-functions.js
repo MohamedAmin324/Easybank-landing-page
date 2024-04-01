@@ -9,15 +9,11 @@ export const toggleVisibility = (...elements) => {
     document.body.classList.toggle("stop-scrolling", isModalHidden);
 }
 
-// export function addScrollAnimation(animationClass, ...elements) {
-//     const observer = new IntersectionObserver((entries) => {
-//         console.log(entries);
-//         entries.forEach(({ isIntersecting, target }) => {
-//             if (isIntersecting) target.classList.add(animationClass);
-//             else target.classList.remove(animationClass);
-//         }
-//         )
-//     })
+export function addScrollAnimation(animationClass, elements) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(({ isIntersecting, target }) => target.classList.toggle(animationClass, isIntersecting)
+        )
+    })
 
-//     elements.forEach((e) => observer.observe(e));
-// }
+    elements.forEach((e) => observer.observe(e));
+}

@@ -17,4 +17,4 @@ websiteLinks.forEach((link) => {
     link.addEventListener("click", (e) => e.preventDefault());
 })
 
-// addScrollAnimation("translate-in", document.querySelector(".service"))
+addScrollAnimation("fade-in", [...document.querySelectorAll(".service"), ...document.querySelectorAll(".article")]);

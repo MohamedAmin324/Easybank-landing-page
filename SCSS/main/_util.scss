@@ -8,6 +8,10 @@
 	transform: translateX(0);
 }
 
+.fade-in {
+	opacity: 1;
+}
+
 .stop-scrolling {
 	overflow: hidden;
 	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
