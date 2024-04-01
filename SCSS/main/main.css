@@ -363,17 +363,26 @@ nav {
 
 @media (width >= 768px) {
   .header-wrapper {
+    min-height: 25rem;
     display: flex;
     justify-content: space-between;
-    gap: 4.375rem;
     margin-left: 4.375rem;
   }
   .header-wrapper header {
-    align-self: center;
     order: 1;
   }
   .header-wrapper .mockups-wrapper {
     order: 2;
+  }
+}
+@media (width >= 1024px) {
+  .header-wrapper {
+    min-height: 23rem;
+  }
+}
+@media (width >= 1250px) {
+  .header-wrapper {
+    min-height: 31.25rem;
   }
 }
 
@@ -385,7 +394,10 @@ nav {
 }
 @media (width >= 768px) {
   .mockups-wrapper {
-    background-image: none;
+    background-image: url("../../images/bg-intro-desktop.svg");
+    flex: 1;
+    background-size: 160%;
+    background-position: center left;
   }
   .mockups-wrapper .mockups-image {
     position: absolute;
@@ -393,15 +405,7 @@ nav {
     top: -60px;
   }
 }
-@media (width < 768px) {
-  .mockups-wrapper .bg-desktop {
-    display: none;
-  }
-}
 @media (width >= 1024px) {
-  .mockups-wrapper {
-    background-image: none;
-  }
   .mockups-wrapper .mockups-image {
     position: absolute;
     right: -90px;
@@ -429,6 +433,7 @@ header .header__text {
   header {
     text-align: unset;
     padding-left: 2.5rem;
+    flex: 1;
   }
   header .request-invite-btn {
     margin-inline: 0;

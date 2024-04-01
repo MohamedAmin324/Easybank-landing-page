@@ -26,6 +26,7 @@ header {
 	@include set-responsive-layout(map-get($breakpoints, "medium")) {
 		text-align: unset;
 		padding-left: 2.5rem;
+		flex: 1;
 
 		.request-invite-btn {
 			margin-inline: 0;

@@ -7,7 +7,10 @@
 	position: relative;
 
 	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
-		background-image: none;
+		background-image: url('../../images/bg-intro-desktop.svg');
+		flex: 1;
+		background-size: 160%;
+		background-position: center left;
 
 		.mockups-image {
 			position: absolute;
@@ -16,15 +19,7 @@
 		}
 	}
 
-	.bg-desktop {
-		@include set-mobile-responsive-layout(map-get($breakpoints, 'medium')) {
-			display: none;
-		}
-	}
-
 	@include set-responsive-layout(map-get($breakpoints, 'large')) {
-		background-image: none;
-
 		.mockups-image {
 			position: absolute;
 			right: -90px;
