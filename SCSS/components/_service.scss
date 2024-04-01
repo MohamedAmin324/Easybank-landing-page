@@ -1,6 +1,9 @@
 @use '../tools' as *;
 
 .service {
+	// transform: translate(-200%);
+	// transition: transform 0.5s ease-out;
+
 	#{&}__img {
 		margin-inline: auto;
 	}
@@ -19,7 +22,7 @@
 		);
 	}
 
-	@include set-responsive-layout(map-get($breakpoints, "medium")) {
+	@include set-responsive-layout(map-get($breakpoints, 'medium')) {
 		#{&}__img {
 			margin-inline: 0;
 		}

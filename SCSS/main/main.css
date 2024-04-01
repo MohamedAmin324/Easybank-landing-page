@@ -165,11 +165,6 @@ body {
   padding: 0.65rem 1.45rem;
   position: relative;
 }
-@media (width < 768px) {
-  .request-invite-btn {
-    display: none;
-  }
-}
 .request-invite-btn:hover::after {
   content: "";
   position: absolute;
@@ -324,8 +319,14 @@ nav {
     height: fit-content;
     align-self: center;
   }
-  nav .navigation-menu, nav .request-invite-btn {
+  nav .navigation-menu,
+  nav .request-invite-btn {
     margin-inline: 0;
+  }
+}
+@media (width < 768px) {
+  nav .request-invite-btn {
+    display: none;
   }
 }
 
